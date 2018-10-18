@@ -1,3 +1,6 @@
+var apigClient = apigClientFactory.newClient({
+            apiKey: 'eo1d1X9N5Q5jMUgLlgaHs3g1S0B3fjqP6XkKlqWn'
+        });
 
 window.onload = function () {
     
