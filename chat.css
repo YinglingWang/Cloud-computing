@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    font-family: "Arial";
+}
+ 
+.all {
+    width: 100%;
+    height: 790px;
+    /*background-color: #7fa4f2;*/
+    background: linear-gradient(to right, #879eee, #ba78dc); /* 标准的语法 */
+}
+ 
+.chat_main {
+    float: left;
+    width: 100%;
+    height: 790px;
+    border: 1px solid seagreen;
+    /*background-color: white;*/
+   /* background: url("../img/圣诞.jpg") no-repeat;*/
+    background-size: cover;
+}
+ 
+.send_message {
+    width: 100%;
+    height: 65px;
+    position: absolute;
+    bottom: 0px;
+    background: linear-gradient(to top, rgba(9, 216, 237, 0.99), #72cad4);
+}
+ 
+.send_message input[type="text"] {
+    width: 90%;
+    height: 30px;
+    margin-top: 16px;
+    margin-left: 10px;
+    border-radius: 10px 0 0 10px;
+    text-indent: 2em;
+    outline: none;
+    background-color: white;
+    border: none;
+}
+ 
+.send_message input[type="button"] {
+    border-radius: 0 10px 10px 0;
+    width: 35px;
+    height: 30px;
+    background-color: white;
+    border: none;
+    margin-left: 0;
+    background-color: white;
+    border: none;
+    outline: none;
+ 
+}
+ 
+.send_message input[type="button"]:hover {
+    background-color: oranged;
+}
+ 
+.send_message input[type="button"]:active {
+    background-color: #879eee;
+}
+ 
+.chat_content ul{
+list-style-type: none;
+}
+.chat_content{
+    overflow: auto;
+    width: 90%;
+    /*设置高度滚动条才有效*/
+    height: 470px;
+}
+.chat_content li{
+    margin-top: 10px;
+    width: 100%;
+    clear: both;
+    display: block;
+ 
+}
+ 
+.chat_content li img{
+    margin: 6px 0 0 0;
+}
+ 
+.chat_content li span {
+    background: #ffd351;
+    padding: 10px;
+    border-radius: 10px;
+    /*最大宽度不能太长，不然布局会混乱*/
+    max-width: 400px;
+    border: 1px solid white;
+    box-shadow: 0 0 3px #879eee;
+    margin: 6px 10px 0 10px;
+    overflow: hidden;
+}
+ 
+.chat_content li img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+ 
+.chat_content li img.imgleft {
+ margin-left: 10px;
+    float: left;
+}
+ 
+.chat_content li img.imgright {
+ margin-right: 10px;
+    float: right;
+}
+ 
+.chat_content li span.spanleft {
+    float: left;
+}
+ 
+.chat_content li span.spanright {
+    float: right;
+}
